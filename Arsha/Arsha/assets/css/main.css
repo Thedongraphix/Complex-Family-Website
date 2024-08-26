@@ -12,7 +12,7 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Poppins",  sans-serif;
   --heading-font: "Jost",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
@@ -30,7 +30,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #47b2e4; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color:  #ec058e; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -189,7 +189,9 @@ h6 {
   .header .logo {
     order: 1;
   }
-
+  .header .logo h1 {
+    font-size: 15px;
+  }
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
@@ -916,12 +918,12 @@ section,
 
 @media (max-width: 640px) {
   .hero h1 {
-    font-size: 28px;
+    font-size: 23px;
     line-height: 36px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 12px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -969,6 +971,10 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about h2 {
+  font-weight: 600;
+  font-size: 16px;
+}
 .about ul {
   list-style: none;
   padding: 0;
