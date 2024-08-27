@@ -30,7 +30,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color:  #ec058e; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #ec058e; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #37517e;
+  --background-color: #85c536;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #4668a2;
@@ -200,6 +200,12 @@ h6 {
 
   .header .navmenu {
     order: 3;
+  }
+  .about ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: var(--accent-color);
+    margin-top: -26px;
   }
 }
 
@@ -990,6 +996,7 @@ section,
   font-size: 20px;
   padding-right: 4px;
   color: var(--accent-color);
+  margin-bottom: 21px;
 }
 
 .about .read-more {
@@ -999,7 +1006,7 @@ section,
   font-size: 16px;
   letter-spacing: 1px;
   padding: 8px 28px;
-  border-radius: 5px;
+  border-radius: 25px;
   transition: 0.3s;
   display: inline-flex;
   align-items: center;
