@@ -1207,7 +1207,7 @@ section,
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--heading-color);
+  background-color:#85c536;
 }
 
 /*--------------------------------------------------------------
@@ -1668,10 +1668,13 @@ section,
     margin: 0 auto 30px auto;
   }
 }
-*/
+*
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials h2{
+  font-size: 17px;
+}
 .testimonials .section-header {
   margin-bottom: 40px;
 }
@@ -1768,6 +1771,9 @@ section,
 /*--------------------------------------------------------------
 # Faq 2 Section
 --------------------------------------------------------------*/
+.faq-2 h2{
+  font-size: 17px;
+}
 .faq-2 .faq-container {
   margin-top: 15px;
 }
