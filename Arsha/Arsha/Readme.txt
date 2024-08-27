@@ -1,6 +1,4 @@
-Thanks for downloading this template!
+A finance website basically a landing page to provide info. on what the whole organisation entails
 
-Template Name: Arsha
-Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Designed and Developed by Thedongraphix.
+Book a service at https://thedongraphix.netlify.app/
