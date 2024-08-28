@@ -61,10 +61,12 @@
   /**
    * Preloader
    */
-  setTimeout(() => {
-    document.querySelector('.preloader').style.display = 'none';
-  }, 5000); // hides preloader after 5 seconds
-  
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
 
   /**
    * Scroll top button
