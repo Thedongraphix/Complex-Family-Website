@@ -529,6 +529,10 @@ h6 {
   font-size: 24px;
 }
 
+.footer-top .sitename{
+  font-size:14px;
+
+}
 .footer .footer-newsletter .newsletter-form {
   margin-top: 30px;
   margin-bottom: 15px;
@@ -575,6 +579,7 @@ h6 {
 
 .footer .footer-top {
   padding-top: 50px;
+  font-size: 15px;
 }
 
 .footer .social-links a {
@@ -597,7 +602,7 @@ h6 {
 }
 
 .footer h4 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
