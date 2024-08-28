@@ -61,12 +61,10 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+  setTimeout(() => {
+    document.querySelector('.preloader').style.display = 'none';
+  }, 5000); // hides preloader after 5 seconds
+  
 
   /**
    * Scroll top button
