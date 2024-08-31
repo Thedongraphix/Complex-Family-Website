@@ -731,42 +731,42 @@
 
             </div>
           </div>
-
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <input type="hidden" name="access_key" value="8c5f8f74-0543-476c-aaf5-e281839e7b85">
+          
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2"></label>
                   <input type="text" name="name" id="name-field" class="form-control" required="" placeholder="Your Name">
                 </div>
-
+          
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2"></label>
                   <input type="email" class="form-control" name="email" id="email-field" required="" placeholder="Your Email">
                 </div>
-
+          
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2"></label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required="" placeholder="Subject">
                 </div>
-
+          
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2"></label>
                   <textarea class="form-control" name="message" rows="10" id="message-field" required="" placeholder="Message"></textarea>
                 </div>
-
+          
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
+          
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
+          
 
         </div>
 
