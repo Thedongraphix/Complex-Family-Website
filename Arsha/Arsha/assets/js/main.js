@@ -30,7 +30,8 @@
     const body = document.querySelector('body');
     const navmenu = document.querySelector('.navmenu ul');
 
-    navToggle.addEventListener('click', function () {
+    // Function to toggle menu
+    const toggleMenu = () => {
         body.classList.toggle('mobile-nav-active');
 
         // Toggle the visibility of the navmenu
@@ -45,6 +46,20 @@
             navToggle.classList.replace('bi-list', 'bi-x'); // Show 'X' icon
         } else {
             navToggle.classList.replace('bi-x', 'bi-list'); // Return to 'hamburger' icon
+        }
+    };
+
+    // Toggle menu when hamburger or 'X' icon is clicked
+    navToggle.addEventListener('click', toggleMenu);
+
+    // Close menu when clicking outside of it
+    document.addEventListener('click', function (event) {
+        const isClickInsideMenu = navmenu.contains(event.target);
+        const isClickOnToggle = navToggle.contains(event.target);
+
+        // If click is outside the menu and not on the toggle button, close the menu
+        if (!isClickInsideMenu && !isClickOnToggle && body.classList.contains('mobile-nav-active')) {
+            toggleMenu(); // Close the menu
         }
     });
 });
