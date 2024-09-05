@@ -25,14 +25,30 @@
   /**
    * Mobile nav toggle
    */
-  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.querySelector('.mobile-nav-toggle');
+    const body = document.querySelector('body');
+    const navmenu = document.querySelector('.navmenu ul');
 
-  function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
-  }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+    navToggle.addEventListener('click', function () {
+        body.classList.toggle('mobile-nav-active');
+
+        // Toggle the visibility of the navmenu
+        if (navmenu.style.transform === 'translateX(0%)') {
+            navmenu.style.transform = 'translateX(100%)';
+        } else {
+            navmenu.style.transform = 'translateX(0%)';
+        }
+
+        // Toggle the icon between 'bi-list' and 'bi-x'
+        if (navToggle.classList.contains('bi-list')) {
+            navToggle.classList.replace('bi-list', 'bi-x'); // Show 'X' icon
+        } else {
+            navToggle.classList.replace('bi-x', 'bi-list'); // Return to 'hamburger' icon
+        }
+    });
+});
+
 
   /**
    * Hide mobile nav on same-page/hash links
