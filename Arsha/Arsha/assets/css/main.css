@@ -983,6 +983,15 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.drop-cap::first-letter {
+  font-size: 48px; /* Adjust the size as needed */
+  float: left;
+  margin-right: 0.1em;
+  line-height: 1;
+  color: var(--accent-color); /* Optional: Change the color */
+}
+
+
 .about h2 {
   font-weight: 600;
   font-size: 16px;
