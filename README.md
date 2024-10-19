@@ -78,4 +78,3 @@ For any inquiries or feedback, please contact:
 - **Email:** chrisoketchcn@example.com
 - **GitHub:** Thedongraphix
 - **My Portfolio:** https://thedongraphix.netlify.app/
-
